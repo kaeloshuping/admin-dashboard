@@ -6,7 +6,7 @@ html, body {
 }
 
 #main-container {
-    width: 80%;
+    width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -25,10 +25,6 @@ html, body {
     color: #ccc;
 }
 
-/* #sidebar-list-items {
-    background-color: red;
-} */
-
 #content-container {
     height: 100%;
     grid-column: 2 / 3;
@@ -40,24 +36,54 @@ html, body {
 #content-header {
     grid-row: 1 /2;
     border: 1px solid black;
-    /* display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, 1fr); */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 #search-container {
-    background-color: blue;
     height: 50%;
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search {
+    width: 95%;
+    border-radius: 1em;
+    border: none;
+    margin: 0.5em;
+    background-color: #ccc;
+    padding: 0.5em;
 }
 
 #profile-container {
-    background-color: red;
     height: 50%;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-container > button {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    border: none;
+}
+
+#profile-container > img {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+#profile-container > p{
+    margin-left: 1em;
+}
+
+#profile-container > img{
+    margin-left: 1em;
 }
 
 #header-footer {
@@ -87,9 +113,10 @@ p, h4 {
 #header-footer-btns > button {
     width: 25%;
     height: 50%;
-    border-radius: 10px;
+    border-radius: 1em;
     background-color: #2965d4;
     border: none;
+    color: #ccc;
 }
 
 #content-body {
