@@ -21,7 +21,7 @@ html, body {
     grid-template-rows: 1fr 5fr;
     justify-content: center;
     background-color: rgb(60, 114, 161);
-    color: #ccc;
+    color: #ffffff;
 }
 
 #content-container {
@@ -116,7 +116,17 @@ p, h4 {
     border-radius: 1em;
     background-color: #2965d4;
     border: none;
-    color: #ccc;
+    color: #ffffff;
+}
+
+#header-footer-btns > button:hover {
+    width: 25%;
+    height: 50%;
+    border-radius: 1em;
+    background-color: #ffffff;
+    border: none;
+    color: #2965d4;
+    border: 1px solid #2965d4;
 }
 
 #content-body {
